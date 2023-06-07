@@ -1,0 +1,91 @@
+p {
+    text-align: center;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(25, 25, 25);
+    font-family: Arial;
+}
+
+.title {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+.move-icon {
+    height: 80px;
+}
+
+.move-button {
+    background-color: transparent;
+    border: 3px solid white;
+    height: 130px;
+    width: 130px;
+    border-radius: 65px;
+    margin-right: 10px;
+}
+
+.js-result {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.js-moves {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.js-score {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buttons,
+.resets {
+    display: flex;
+    justify-content: center;
+}
+
+.reset {
+    background-color: white;
+    font-size: 20px;
+    font-family: Arial;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.move-button:hover,
+.reset:hover {
+    cursor: pointer;
+}
+
+.reset:hover {
+    background-color: rgb(221, 221, 221);
+    border-color: rgb(221, 221, 221);
+}
+
+.move-button:hover {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+}
+
+.move-button:active {
+    background-color: rgb(54, 54, 54);
+}
+
+.reset:active {
+    background-color: rgb(170, 170, 170);
+    border-color: rgb(170, 170, 170);
+    color: black;
+}
