@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+
+<body>
+    <p class="title">Rock Paper Scissors</p>
+
+    <div class="buttons">
+        <button class="move-button" onclick="
+        let compMove = computerMove();
+        let results = gameMech('Rock', compMove);
+        end(results, 'Rock', compMove);
+        ">
+            <img class="move-icon" src="icons/rock-emoji.png">
+        </button>
+
+        <button class="move-button" onclick="
+        compMove = computerMove();
+        results = gameMech('Paper', compMove);
+        end(results, 'Paper', compMove);
+        ">
+            <img class="move-icon" src="icons/paper-emoji.png">
+        </button>
+
+        <button class="move-button" onclick="
+        compMove = computerMove();
+        results = gameMech('Scissors', compMove);
+        end(results, 'Scissors', compMove);
+        ">
+            <img class="move-icon" src="icons/scissors-emoji.png">
+        </button>
+    </div>
+
+    <p class="js-result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score"></p>
+
+    <div class="resets">
+        <button class="reset" onclick="
+            reset();
+            ">Reset
+        </button>
+    </div>
+
+    <script src="functunality.js"></script>
+</body>
+
+</html>
